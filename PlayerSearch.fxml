@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="818.0" prefWidth="799.0" stylesheets="@login.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javanetworking.PlayerSearch">
+   <children>
+      <AnchorPane prefHeight="808.0" prefWidth="799.0" styleClass="Guestleft" stylesheets="@login.css">
+         <children>
+            <Text fill="#ee2b2b" layoutX="226.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Player Search">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Text>
+            <TextField fx:id="Byname" layoutX="201.0" layoutY="91.0" promptText="Enter name" />
+            <Button fx:id="SearchByName" layoutX="677.0" layoutY="91.0" mnemonicParsing="false" onAction="#onSearchByName" text="Search" />
+            <TextField fx:id="bycountry" layoutX="258.0" layoutY="135.0" promptText="Enter country name" />
+            <TextField fx:id="byclib" layoutX="438.0" layoutY="135.0" prefHeight="26.0" prefWidth="195.0" promptText="Enter club name (or type &quot;ANY&quot;)" />
+            <Button fx:id="ByClubandCountry" layoutX="677.0" layoutY="135.0" mnemonicParsing="false" onAction="#onSearchByClubAndCountry" text="Search" />
+            <TextField fx:id="position" layoutX="207.0" layoutY="182.0" promptText="Enter Position" />
+            <TextField fx:id="maxsal" layoutX="226.0" layoutY="223.0" promptText="Max salary" />
+            <TextField fx:id="minsal" layoutX="438.0" layoutY="223.0" promptText="Min salary" />
+            <Button fx:id="count" layoutX="677.0" layoutY="267.0" mnemonicParsing="false" onAction="#onSearchCountrywise" text="Search" />
+            <Button fx:id="bysal" layoutX="677.0" layoutY="223.0" mnemonicParsing="false" onAction="#onSearchBySalary" text="Search" />
+            <Button fx:id="Searchbyposition" layoutX="677.0" layoutY="182.0" mnemonicParsing="false" onAction="#onSearchByPosition" text="Search" />
+            <Text layoutX="41.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search By Name">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="39.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search By Club and Country">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="34.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search By Position">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="36.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search By Salary Range">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Text layoutX="34.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country-wise Player Count">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <Button fx:id="Back" layoutY="1.0" mnemonicParsing="false" onAction="#gotoGuest" text="Back" />
+            <HBox layoutX="-1.0" layoutY="304.0" prefHeight="504.0" prefWidth="799.0">
+               <children>
+                  <ListView fx:id="displayresult" prefHeight="504.0" prefWidth="801.0" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

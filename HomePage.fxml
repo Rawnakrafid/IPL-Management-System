@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="644.0" prefWidth="930.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javanetworking.HomePage">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="867.0" prefWidth="1052.0" styleClass="Homebg" stylesheets="@login.css">
+         <children>
+            <Text fill="#2d21db" layoutX="125.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Back!">
+               <font>
+                  <Font name="Apple Braille" size="48.0" />
+               </font>
+            </Text>
+            <Label fx:id="Username" layoutX="482.0" layoutY="12.0" stylesheets="@login.css" text="Label" textFill="#4714db" textOverrun="CLIP">
+               <font>
+                  <Font size="38.0" />
+               </font></Label>
+            <Button fx:id="LogOut" layoutX="1.0" mnemonicParsing="false" onAction="#handleLogout" styleClass="buttonofintro" stylesheets="@login.css" text="Sign Out" />
+            <HBox layoutX="198.0" layoutY="115.0" prefHeight="500.0" prefWidth="569.0">
+               <children>
+                  <TableView fx:id="ShowlPlayers" prefHeight="502.0" prefWidth="573.0" stylesheets="@login.css">
+                    <columns>
+                      <TableColumn fx:id="nameColumn" prefWidth="143.0" text="Name" />
+                        <TableColumn fx:id="countryColumn" prefWidth="98.0" text="Country" />
+                        <TableColumn fx:id="positionColumn" prefWidth="95.0" text="Position" />
+                        <TableColumn fx:id="details" prefWidth="109.0" text="Details" />
+                        <TableColumn fx:id="status" prefWidth="114.0" text="Status" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+            <TitledPane animated="false" layoutY="94.0" prefHeight="97.0" prefWidth="185.0" text="Search by Name">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="6.0" prefWidth="168.0">
+                     <children>
+                        <TextField fx:id="name" layoutX="8.0" layoutY="6.0" promptText="Name" />
+                        <Button fx:id="seachbyname" layoutX="61.0" layoutY="35.0" mnemonicParsing="false" onAction="#searchByName" text="Search" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" layoutX="-1.0" layoutY="191.0" prefHeight="93.0" prefWidth="191.0" text="Search by Position">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="position" layoutX="15.0" layoutY="7.0" promptText="Position" />
+                        <Button fx:id="searchbyposition" layoutX="68.0" layoutY="39.0" mnemonicParsing="false" onAction="#searchByPosition" text="Search" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" layoutY="283.0" prefHeight="110.0" prefWidth="188.0" text="Search by Country">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="80.0" prefWidth="184.0">
+                     <children>
+                        <TextField fx:id="country" layoutX="13.0" layoutY="14.0" promptText="Country" />
+                        <Button fx:id="bycon" layoutX="66.0" layoutY="49.0" mnemonicParsing="false" onAction="#searchByCountry" text="Search" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <TitledPane animated="false" layoutX="1.0" layoutY="393.0" prefHeight="152.0" prefWidth="185.0" text="Search by Salary Range">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="120.0" prefWidth="182.0">
+                     <children>
+                        <TextField fx:id="maxsal" layoutX="13.0" layoutY="57.0" promptText="Maximum Salary" />
+                        <TextField fx:id="minsal" layoutX="13.0" layoutY="14.0" promptText="Minimum Salary" />
+                        <Button fx:id="bysal" layoutX="65.0" layoutY="91.0" mnemonicParsing="false" onAction="#searchBySalaryRange" text="Search" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <Button fx:id="showall" layoutX="25.0" layoutY="551.0" mnemonicParsing="false" onAction="#showAllPlayers" styleClass="buttonlogin" stylesheets="@login.css" text="Show All Players" />
+            <Button fx:id="ShowMarket" layoutX="769.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleShowTransfer" styleClass="buttonofintro" stylesheets="@login.css" text="Transfer Market" />
+            <Button fx:id="SendOffer" layoutX="780.0" layoutY="477.0" mnemonicParsing="false" onAction="#handleoffer" styleClass="buttonofintro" text="Notifications" />
+            <Button fx:id="addplayer" layoutX="787.0" layoutY="178.0" mnemonicParsing="false" onAction="#AddPlayer" styleClass="buttonofintro" stylesheets="@login.css" text="Add a Player" />
+            <Label fx:id="State" layoutX="453.0" layoutY="77.0" textFill="#3a0ad7">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

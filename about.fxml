@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="414.0" prefWidth="607.0" styleClass="anchor-pane" stylesheets="@login.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javanetworking.About">
+   <children>
+      <TextArea layoutX="42.0" layoutY="35.0" prefHeight="365.0" prefWidth="524.0" styleClass="vboxindeets" stylesheets="@login.css" text="This project is a part of Object Oriented Programming Sessional (CSE-108) For Level - 1 Term -2, Batch 2022 of Computer Science and Engineering Department of Bangladesh Univserity of Engineering and Technology. This is project focuses on the usage of JAVAFX, to create an Interactive Cricket Management System.&#10;&#10;The Main features of this project includes Loging in as a user or as a guest, searching for players using specific criteria,  searching within a club for specific criteria, Handling transfers of players between multiple clubs using the concepts of Java Networking, using multiple club together to acheive this. Some bonus features like player card, hall of fame etc. was also added to make this more fun.&#10;&#10;This project is prepared by:&#10;Rawnak Mubtasim Rafid&#10;Student ID:2205154&#10;&#10;&#10;" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="601.0" prefWidth="802.0" styleClass="anchor-pane" stylesheets="@login.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javanetworking.ShowPass">
+
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="450.0" prefWidth="377.0" spacing="5" style="-fx-padding: 10;" styleClass="vboxindeets" stylesheets="@login.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javanetworking.PlayerDetails">
+    <Label fx:id="nameLabel" prefHeight="30.0" prefWidth="220.0" styleClass="labelindeets" stylesheets="@login.css" />
+    <Label fx:id="countryLabel" prefHeight="30.0" prefWidth="220.0" styleClass="labelindeets" stylesheets="@login.css" />
+    <Label fx:id="positionLabel" prefHeight="30.0" prefWidth="220.0" styleClass="labelindeets" stylesheets="@login.css" />
+    <Label fx:id="ageLabel" prefHeight="30.0" prefWidth="220.0" styleClass="labelindeets" stylesheets="@login.css" />
+    <Label fx:id="clubLabel" prefHeight="30.0" prefWidth="220.0" styleClass="labelindeets" stylesheets="@login.css" />
+    <Label fx:id="salaryLabel" prefHeight="30.0" prefWidth="222.0" styleClass="labelindeets" stylesheets="@login.css" />
+    <Label fx:id="offeredFromLabel" styleClass="labelindeets" stylesheets="@login.css" visible="false" />
+    <Label fx:id="amountLabel" styleClass="labelindeets" stylesheets="@login.css" visible="false" />
+   <ImageView fx:id="ClubShow" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+</VBox>
